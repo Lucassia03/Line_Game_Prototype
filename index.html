@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101619" />
+    <title>LINE — Logistics RTS</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game-canvas" aria-label="LINE game world"></canvas>
+      <div id="hud" class="hud">
+        <header class="topbar glass">
+          <div class="brand"><span class="brand-mark"></span><strong>LINE</strong><span class="scenario">ASSAULT / SEED 2405</span></div>
+          <div id="resource-bar" class="resources"></div>
+          <div id="time-controls" class="time-controls"></div>
+        </header>
+        <aside id="object-panel" class="object-panel glass"></aside>
+        <aside id="objectives-panel" class="objectives-panel glass"></aside>
+        <div id="warning-stack" class="warning-stack" aria-live="polite"></div>
+        <div id="tutorial" class="tutorial glass"></div>
+        <div id="minimap-frame" class="minimap-frame glass"><canvas id="minimap" width="240" height="140"></canvas></div>
+        <div id="actionbar" class="actionbar glass"></div>
+        <div id="tooltip" class="tooltip"></div>
+        <div id="modal-root"></div>
+        <div id="debug-panel" class="debug-panel glass"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
